@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -8,6 +7,24 @@
 html{
     /* me permite deslizar cuando hago clic en los links del menu*/
     scroll-behavior: smooth;
+}
+
+.aboutme h2,
+.skills h2,
+.curriculum h2,
+.portfolio h2,
+.contact h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (prefers-reduced-motion: reduce){
+    *{
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 /* MENU */
@@ -134,13 +151,6 @@ html{
     margin: auto;
 }
 
-.aboutme h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-}
-
 .aboutme .content-section p{
     font: 18px;
     line-height: 22px;
@@ -262,13 +272,6 @@ html{
     margin: auto;
 }
 
-.skills h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-}
-
 .skills-cloud {
   display: flex;
   flex-wrap: wrap;
@@ -299,7 +302,7 @@ html{
 
 .soft-skills .skill-item {
   background-color: #221c18;
-  color: #cccccc;
+  color: #e0e0e0;
   padding: 10px 15px;
   border-radius: 10px;
   font-weight: bold;
@@ -330,13 +333,6 @@ html{
 .curriculum .content-section {
     max-width: 1100px;
     margin: auto;
-}
-
-.curriculum h2 {
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
 }
 
 .curriculum .tile {
@@ -456,13 +452,6 @@ html{
   margin: auto;
 }
 
-.portfolio h2 {
-  font-size: 48px;
-  font-family: 'Righteous';
-  text-align: center;
-  padding: 20px 0;
-}
-
 /* Grid flexible y ordenado */
 .portfolio .gallery {
   display: grid;
@@ -506,28 +495,17 @@ html{
   overflow: hidden;
 }
 
-/* Contenedor de texto con scroll */
+/* Truncated instead of an inner scrollbar: full text is a click away via "See Project" */
 .project-info p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #ccc;
+  color: #e0e0e0;
   margin-bottom: 15px;
   flex: 1;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #ff6a25 #1e2124;
-}
-
-/* Estilo scrollbar (para navegadores WebKit) */
-.project-info p::-webkit-scrollbar {
-  width: 6px;
-}
-.project-info p::-webkit-scrollbar-thumb {
-  background-color: #ff6a25;
-  border-radius: 4px;
-}
-.project-info p::-webkit-scrollbar-track {
-  background: #1e2124;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-info h3 {
@@ -567,13 +545,6 @@ html{
 .contact .section-content{
     max-width: 1100px;
     margin: auto;
-}
-
-.contact h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
 }
 
 .contact p{
