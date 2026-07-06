@@ -193,6 +193,10 @@ html{
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .aboutme .content-section a{
@@ -424,6 +428,17 @@ html{
 
 .curriculum .tile .item p{
     line-height: 24px;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.curriculum .tile .item li{
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .curriculum .tile .izq{
@@ -544,6 +559,10 @@ html{
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .project-info h3 {
