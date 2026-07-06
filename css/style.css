@@ -557,22 +557,42 @@ html{
 
 .contact .tile{
     display: flex;
+    gap: 30px;
+    align-items: stretch;
 }
 
 .contact .col{
     width: 50%;
     padding: 10px;
     position: relative;
+    min-height: 320px;
 }
 
 .contact .col .send_email{
     position: absolute;
-    top:40%;
-    background-color: #272f36;
-    padding: 20px;
-    max-width:350px;
+    top: 50%;
+    background-color: #1e2124;
+    padding: 30px;
+    width: 100%;
+    max-width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 12px;
+    border: 1px solid #2c3237;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact .col .send_email:hover{
+    transform: translate(-50%, calc(-50% - 6px));
+    box-shadow: 0 8px 25px rgba(255,106,37,0.4);
+}
+
+.contact .col .send_email p{
+    padding: 0 0 10px 0;
+    font-size: 16px;
+    font-family: 'Work Sans';
 }
 
 .contact .button{
@@ -605,31 +625,52 @@ html{
 }
 
 .contact .col img{
-    width:100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: brightness(.45);
 }
 
 .contact .col .info{
     position: absolute;
-    top:40%;
-    background-color: #252A2E;
-    padding: 20px;
-    max-width:350px;
+    top: 50%;
+    background-color: #1e2124;
+    padding: 30px;
+    width: 100%;
+    max-width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 12px;
+    border: 1px solid #2c3237;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact .col .info:hover{
+    transform: translate(-50%, calc(-50% - 6px));
+    box-shadow: 0 8px 25px rgba(255,106,37,0.4);
 }
 
 .contact .col .info ul{
     list-style: none;
 }
 
-.contact .col .info .ul .li{
-    margin-bottom: 20px;
+.contact .col .info ul li{
+    margin-bottom: 16px;
+    font-size: 16px;
 }
 
-.conectord .col .info ul li i{
+.contact .col .info ul li:last-child{
+    margin-bottom: 0;
+}
+
+.contact .col .info ul li i{
     color: #ff6a25;
     display: inline-block;
-    margin-right: 20px;
+    width: 24px;
+    text-align: center;
+    margin-right: 12px;
 }
 
 /* FOOTER */
@@ -766,19 +807,32 @@ footer .up{
 
     .contact .tile .col{
         width: 100%;
-        min-height: 220px;
+        min-height: 0;
+    }
+
+    .contact .col img{
+        height: 200px;
+        border-radius: 12px 12px 0 0;
     }
 
     /* These cards are absolutely positioned against the column, which has
        no intrinsic height once the layout stacks to a single column. */
     .contact .col .send_email,
-    .contact .col .info{
+    .contact .col .info,
+    .contact .col .send_email:hover,
+    .contact .col .info:hover{
         position: static;
         transform: none;
         left: auto;
         top: auto;
         max-width: 100%;
         margin: 0 auto 20px auto;
+        box-shadow: none;
+    }
+
+    .contact .col .info{
+        border-radius: 0 0 12px 12px;
+        margin-top: 0;
     }
 }
 
