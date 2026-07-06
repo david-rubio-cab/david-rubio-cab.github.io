@@ -3,6 +3,7 @@ function loadHTML(id, file) {
     .then(response => response.text())
     .then(data => {
       document.getElementById(id).innerHTML = data;
+      setLanguage(getStoredLanguage());
     })
     .catch(error => console.error("Error cargando " + file, error));
 }
@@ -21,6 +22,12 @@ window.onload = () => {
 // Header is injected asynchronously, so the mobile menu toggle is delegated
 // on document instead of bound directly to #nav / .nav-responsive.
 document.addEventListener("click", (event) => {
+  const langBtn = event.target.closest("[data-lang]");
+  if (langBtn) {
+    setLanguage(langBtn.dataset.lang);
+    return;
+  }
+
   const toggle = event.target.closest(".nav-responsive");
   const navLink = event.target.closest("#nav a");
   const nav = document.getElementById("nav");

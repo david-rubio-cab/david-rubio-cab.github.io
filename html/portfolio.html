@@ -1,108 +1,108 @@
 <section id="portfolio" class="portfolio">
   <div class="section-content">
-    <h2>Projects</h2>
+    <h2 data-i18n="portfolio-title">Projects</h2>
     <div class="gallery">
 
       <div class="project-card">
         <img src="img/computer_vision.jpg" alt="Computer Vision">
         <div class="project-info">
-          <h3>Computer Vision</h3>
-          <p style="text-align: justify;">
-            This project implements an image similarity–based clothing recommendation system using a pretrained VGG16 model. 
+          <h3 data-i18n="proj-cv-title">Computer Vision</h3>
+          <p style="text-align: justify;" data-i18n="proj-cv-body">
+            This project implements an image similarity–based clothing recommendation system using a pretrained VGG16 model.
             Images are processed to extract deep visual features, which are then normalized and compared using cosine similarity.
-            Given a query image, the system recommends visually similar clothing items from a catalog dataset, demonstrating how 
+            Given a query image, the system recommends visually similar clothing items from a catalog dataset, demonstrating how
             convolutional neural networks can be used for content-based image retrieval.
           </p>
-          <a href="https://github.com/david-rubio-cab/Computer-Vision.git" target="_blank" class="button">See Project</a>
+          <a href="https://github.com/david-rubio-cab/Computer-Vision.git" target="_blank" class="button" data-i18n="portfolio-see-project">See Project</a>
         </div>
       </div>
 
       <div class="project-card">
         <img src="img/machine_learning.jpg" alt="Machine Learning">
         <div class="project-info">
-          <h3>Machine Learning</h3>
-          <p>This project addresses the problem of bank account fraud detection using a synthetic dataset published at NeurIPS 2022. 
-            The dataset includes transaction, account, and device-related features. The goal is to predict fraudulent transactions in 
+          <h3 data-i18n="proj-ml-title">Machine Learning</h3>
+          <p data-i18n="proj-ml-body">This project addresses the problem of bank account fraud detection using a synthetic dataset published at NeurIPS 2022.
+            The dataset includes transaction, account, and device-related features. The goal is to predict fraudulent transactions in
             a highly imbalanced dataset.</p>
-          <a href="https://github.com/david-rubio-cab/Machine-Learning.git" target="_blank" class="button">See Project</a>
+          <a href="https://github.com/david-rubio-cab/Machine-Learning.git" target="_blank" class="button" data-i18n="portfolio-see-project">See Project</a>
         </div>
       </div>
 
       <div class="project-card">
         <img src="img/deep_learning.jpg" alt="Deep Learning">
         <div class="project-info">
-          <h3>Deep Learning</h3>
-          <p>Multi-class image classification model to detect COVID-19, Viral Pneumonia, and Normal cases using the COVID-19 Radiography Database (Kaggle). 
-            Implemented Transfer Learning with EfficientNetB3 (TensorFlow/Keras), applied data preprocessing and augmentation with ImageDataGenerator, and performed 
+          <h3 data-i18n="proj-dl-title">Deep Learning</h3>
+          <p data-i18n="proj-dl-body">Multi-class image classification model to detect COVID-19, Viral Pneumonia, and Normal cases using the COVID-19 Radiography Database (Kaggle).
+            Implemented Transfer Learning with EfficientNetB3 (TensorFlow/Keras), applied data preprocessing and augmentation with ImageDataGenerator, and performed
             selective fine-tuning to optimize generalization. Achieved ~70% test accuracy on a limited medical imaging dataset.
             Technologies: Python, TensorFlow, Keras, EfficientNetB3, NumPy, Pandas, Matplotlib, OpenCV, Scikit-learn.</p>
-          <a href="https://github.com/david-rubio-cab/Deep-Learning.git" target="_blank" class="button">See Project</a>
+          <a href="https://github.com/david-rubio-cab/Deep-Learning.git" target="_blank" class="button" data-i18n="portfolio-see-project">See Project</a>
         </div>
       </div>
 
       <div class="project-card">
         <img src="img/data_science.jpg" alt="Data Science">
         <div class="project-info">
-          <h3>Data Science</h3>
-          <p>End-to-end data preprocessing and exploratory analysis project on a highly imbalanced bank account fraud dataset (1M+ records) published in NeurIPS 2022.
+          <h3 data-i18n="proj-ds-title">Data Science</h3>
+          <p data-i18n="proj-ds-body">End-to-end data preprocessing and exploratory analysis project on a highly imbalanced bank account fraud dataset (1M+ records) published in NeurIPS 2022.
             Performed advanced data cleaning, missing value imputation (group-based median strategy), categorical encoding (One-Hot Encoding), feature engineering, outlier analysis, and dimensionality reduction (PCA).
-            Applied statistical hypothesis testing (T-test, Chi-square) for feature selection and correlation analysis to remove redundant variables. Managed severe class imbalance (~1.1% fraud rate) and optimized the 
+            Applied statistical hypothesis testing (T-test, Chi-square) for feature selection and correlation analysis to remove redundant variables. Managed severe class imbalance (~1.1% fraud rate) and optimized the
             dataset for downstream binary classification modeling. Final dataset prepared for machine learning modeling and dimensionality reduction.
             Technologies: Python, Pandas, NumPy, Matplotlib, Seaborn, SciPy, Scikit-learn (StandardScaler, PCA), Statistical Testing, Feature Engineering.</p>
-          <a href="https://github.com/david-rubio-cab/Data-Science.git" target="_blank" class="button">See Project</a>
+          <a href="https://github.com/david-rubio-cab/Data-Science.git" target="_blank" class="button" data-i18n="portfolio-see-project">See Project</a>
         </div>
       </div>
 
       <div class="project-card">
         <img src="img/time_series.jpg" alt="Time Series">
         <div class="project-info">
-          <h3>Time Series</h3>
-          <p>End-to-end time series forecasting project using weekly influenza incidence data. Performed data cleaning, interpolation of missing values, stationarity testing (ADF test), seasonal decomposition, 
+          <h3 data-i18n="proj-ts-title">Time Series</h3>
+          <p data-i18n="proj-ts-body">End-to-end time series forecasting project using weekly influenza incidence data. Performed data cleaning, interpolation of missing values, stationarity testing (ADF test), seasonal decomposition,
             and distribution analysis. Applied log transformation and Robust Scaling to handle skewness and zero inflation (41% zeros).
-            Implemented time delay embedding (lag features) and engineered temporal predictors (month, weekday, holidays). Compared traditional Machine Learning models (Linear Regression, Random Forest, XGBoost) 
+            Implemented time delay embedding (lag features) and engineered temporal predictors (month, weekday, holidays). Compared traditional Machine Learning models (Linear Regression, Random Forest, XGBoost)
             with Deep Learning architectures (RNN, LSTM, GRU) built in PyTorch.
             Random Forest achieved strong performance among ML models, while LSTM outperformed all models (R² ≈ 0.99), effectively capturing seasonal patterns and sequential dependencies.
             Technologies: Python, Pandas, NumPy, Scikit-learn, XGBoost, Statsmodels, PyTorch (RNN/LSTM/GRU), Plotly, Matplotlib, Time Series Analysis, Feature Engineering.</p>
-          <a href="https://github.com/david-rubio-cab/Time-Series.git" target="_blank" class="button">See Project</a>
+          <a href="https://github.com/david-rubio-cab/Time-Series.git" target="_blank" class="button" data-i18n="portfolio-see-project">See Project</a>
         </div>
       </div>
 
       <div class="project-card">
         <img src="img/recommendation_series.jpg" alt="Recommendation System">
         <div class="project-info">
-          <h3>Recommendation System</h3>
-          <p>Item-based recommendation system using the MovieLens 100K dataset. Performed data cleaning, null handling, and construction of a user–item rating matrix. Implemented cosine similarity to compute movie-to-movie
+          <h3 data-i18n="proj-rs-title">Recommendation System</h3>
+          <p data-i18n="proj-rs-body">Item-based recommendation system using the MovieLens 100K dataset. Performed data cleaning, null handling, and construction of a user–item rating matrix. Implemented cosine similarity to compute movie-to-movie
             similarity and built a recommendation function that returns the Top-N most similar titles based on user rating patterns. The system generates interpretable similarity scores and demonstrates how collaborative filtering
             can capture latent user preferences without explicit content features.
             Technologies: Python, Pandas, NumPy, Scikit-learn (cosine_similarity), Matplotlib, Collaborative Filtering, Recommender Systems.</p>
-          <a href="https://github.com/david-rubio-cab/Recommendation-Systems.git" target="_blank" class="button">See Project</a>
+          <a href="https://github.com/david-rubio-cab/Recommendation-Systems.git" target="_blank" class="button" data-i18n="portfolio-see-project">See Project</a>
         </div>
       </div>
 
       <div class="project-card">
         <img src="img/nlp.jpg" alt="NLP">
         <div class="project-info">
-          <h3>NLP</h3>
-          <p> NLP Sentiment Analysis project for binary sentiment classification using the Yelp Review dataset. Performed text preprocessing (normalization, tokenization, stopword removal, lemmatization) and feature engineering with 
+          <h3 data-i18n="proj-nlp-title">NLP</h3>
+          <p data-i18n="proj-nlp-body"> NLP Sentiment Analysis project for binary sentiment classification using the Yelp Review dataset. Performed text preprocessing (normalization, tokenization, stopword removal, lemmatization) and feature engineering with
               TF-IDF, PCA visualization, Word2Vec embeddings, and BERT contextual embeddings.
-              Trained custom Bidirectional LSTM (PyTorch) models using averaged Word2Vec representations and evaluated performance using Accuracy, Precision, Recall, F1-score, and Confusion Matrix. Additionally, extracted sentence-level 
+              Trained custom Bidirectional LSTM (PyTorch) models using averaged Word2Vec representations and evaluated performance using Accuracy, Precision, Recall, F1-score, and Confusion Matrix. Additionally, extracted sentence-level
               embeddings from BERT (bert-base-uncased) for downstream modeling.
               The project compares classical vectorization techniques with neural embeddings and transformer-based representations in a full NLP pipeline.
               Technologies: Python, Pandas, NumPy, NLTK, Gensim (Word2Vec, Doc2Vec), Scikit-learn (TF-IDF, PCA, metrics), PyTorch (LSTM), Hugging Face Transformers (BERT), Sentence-Transformers, Matplotlib, Seaborn, Plotly.</p>
-          <a href="https://github.com/david-rubio-cab/NLP.git" target="_blank" class="button">See Project</a>
+          <a href="https://github.com/david-rubio-cab/NLP.git" target="_blank" class="button" data-i18n="portfolio-see-project">See Project</a>
         </div>
       </div>
 
       <div class="project-card">
         <img src="img/base_python.jpg" alt="Base Python">
         <div class="project-info">
-          <h3>Base Python</h3>
-          <p>Python project for managing patient and doctor data in a hospital emergency department. Implemented functionalities for patient registration, clinical history management, admission/discharge tracking, and secure doctor 
-            authentication. Developed modules for reading and writing patient histories to CSV, validating inputs (DNI, age), and handling exceptions. Built a comprehensive menu-driven interface allowing doctors to register patients, 
+          <h3 data-i18n="proj-bp-title">Base Python</h3>
+          <p data-i18n="proj-bp-body">Python project for managing patient and doctor data in a hospital emergency department. Implemented functionalities for patient registration, clinical history management, admission/discharge tracking, and secure doctor
+            authentication. Developed modules for reading and writing patient histories to CSV, validating inputs (DNI, age), and handling exceptions. Built a comprehensive menu-driven interface allowing doctors to register patients,
             query patient information and clinical history, update discharge dates, and add medical notes. Ensured security with login authentication and password validation for medical staff.
             The project integrates file I/O, dictionary-based data structures, date handling, regular expressions, and exception management to create a fully functional hospital management system.
             Technologies: Python, CSV, datetime, re, exception handling, input validation, procedural programming, menu-driven CLI.</p>
-          <a href="https://github.com/david-rubio-cab/Base_Python.git" target="_blank" class="button">See Project</a>
+          <a href="https://github.com/david-rubio-cab/Base_Python.git" target="_blank" class="button" data-i18n="portfolio-see-project">See Project</a>
         </div>
       </div>
 

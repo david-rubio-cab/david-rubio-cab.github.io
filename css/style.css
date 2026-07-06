@@ -71,6 +71,12 @@ html{
 .contenedor-header header nav ul li a:hover{
     color: #ff6a25;
 }
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .nav-responsive{
     background-color:  #ff6a25;
     color: #fff;
@@ -78,6 +84,32 @@ html{
     border-radius: 5px;
     cursor: pointer;
     display: none;
+}
+
+.lang-switcher{
+    display: flex;
+    gap: 6px;
+}
+
+.lang-switcher button{
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 1;
+    padding: 4px 6px;
+    cursor: pointer;
+    opacity: .5;
+    transition: opacity .3s, border-color .3s;
+}
+
+.lang-switcher button:hover{
+    opacity: .8;
+}
+
+.lang-switcher button.active{
+    opacity: 1;
+    border-color: #ff6a25;
 }
 
 /* INIT SECTION*/
