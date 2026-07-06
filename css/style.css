@@ -735,18 +735,14 @@ footer .up{
     }
 
     .aboutme .tile .col{
-        width: fit-content;
-    }
-
-    .skill .tile{
-        display: block;
-    }
-
-    .skill .tile .col{
         width: 100%;
     }
 
-    .skill .tile .col .kill-bar{
+    .skills .tile{
+        display: block;
+    }
+
+    .skills .tile .col{
         width: 100%;
     }
 
@@ -755,22 +751,41 @@ footer .up{
     }
 
     .curriculum .tile .col{
-        width: 90%;
-    }
-    .curriculum .tile .right{
-        margin-left: 20px;
+        width: 100%;
+        padding: 0;
     }
 
-    .portfolio .galery{
+    .curriculum .tile .left,
+    .curriculum .tile .right{
+        border: none;
+    }
+
+    /* The timeline connectors rely on negative offsets that only make
+       sense in the two-column desktop layout; they cause horizontal
+       overflow once columns stack full-width. */
+    .curriculum .tile .izq,
+    .curriculum .tile .der{
+        border: none;
+        margin: 0 0 20px 0;
+    }
+
+    .curriculum .tile .item .conectori,
+    .curriculum .tile .item .conectord{
+        display: none;
+    }
+
+    .portfolio .gallery{
         display: block;
         width: 100%;
     }
 
-    .portfolio .galery .project{
+    .portfolio .project-card{
         max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
 
-    .portfolio .galery .progress img{
+    .portfolio .project-card img{
         width: 100%;
     }
 
@@ -780,5 +795,41 @@ footer .up{
 
     .contact .tile .col{
         width: 100%;
+        min-height: 220px;
+    }
+
+    /* These cards are absolutely positioned against the column, which has
+       no intrinsic height once the layout stacks to a single column. */
+    .contact .col .send_email,
+    .contact .col .info{
+        position: static;
+        transform: none;
+        left: auto;
+        top: auto;
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .init .content-banner{
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .init .content-banner h1{
+        font-size: 32px;
+    }
+
+    .aboutme h2,
+    .skills h2,
+    .curriculum h2,
+    .portfolio h2,
+    .contact h2{
+        font-size: 32px;
+    }
+
+    .contenedor-header header .logo a{
+        font-size: 28px;
     }
 }

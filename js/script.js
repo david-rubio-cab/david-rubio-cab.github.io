@@ -17,3 +17,18 @@ window.onload = () => {
   loadHTML("contact", "html/contact.html");
   loadHTML("footer", "html/footer.html");
 };
+
+// Header is injected asynchronously, so the mobile menu toggle is delegated
+// on document instead of bound directly to #nav / .nav-responsive.
+document.addEventListener("click", (event) => {
+  const toggle = event.target.closest(".nav-responsive");
+  const navLink = event.target.closest("#nav a");
+  const nav = document.getElementById("nav");
+  if (!nav) return;
+
+  if (toggle) {
+    nav.classList.toggle("responsive");
+  } else if (navLink) {
+    nav.classList.remove("responsive");
+  }
+});
